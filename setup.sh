@@ -91,5 +91,8 @@ brew cask install iina
 # Install The Unarchiver
 brew cask install the-unarchiver
 
+# Install Transmission
+brew cask install transmission
+
 # Install Cakebrew
 brew cask install cakebrew
