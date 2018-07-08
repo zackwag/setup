@@ -57,10 +57,14 @@ brew install wget
 # Install python (comes with Setuptools and pip)
 brew install python
 
-# Install Node
+# Install n to get Node
 brew install n 
 
+# Install Node Stable Version
 n stable
+
+# Install Firacode Font
+npm i firacode
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
 echo Tapping caskroom/cask...
