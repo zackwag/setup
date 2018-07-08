@@ -5,7 +5,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 source $HOME/.bash_profile
 nvm install node
 
-
 # Install  Homebrew. Homebrew  is the equivalent of apt-get for linux. Its required to install tools such as git and wget.
 # Mac OS 10.9 will automatically prompt user to install XCode command line tools which is a pre-requisite.
 which brew 
