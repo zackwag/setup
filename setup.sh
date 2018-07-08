@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#install NVM (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-source $HOME/.bash_profile
-nvm install node
-
 # Install  Homebrew. Homebrew  is the equivalent of apt-get for linux. Its required to install tools such as git and wget.
 # Mac OS 10.9 will automatically prompt user to install XCode command line tools which is a pre-requisite.
 which brew 
@@ -61,6 +56,11 @@ brew install wget
 
 # Install python (comes with Setuptools and pip)
 brew install python
+
+# Install Node
+brew install n 
+
+n stable
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
 echo Tapping caskroom/cask...
