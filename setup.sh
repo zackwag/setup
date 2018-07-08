@@ -94,5 +94,8 @@ brew cask install the-unarchiver
 # Install Transmission
 brew cask install transmission
 
+# Install Vanilla
+brew cask install vanilla
+
 # Install Cakebrew
 brew cask install cakebrew
