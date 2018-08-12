@@ -2,7 +2,7 @@
 
 # Install  Homebrew. Homebrew  is the equivalent of apt-get for linux. Its required to install tools such as git and wget.
 # Mac OS 10.9 will automatically prompt user to install XCode command line tools which is a pre-requisite.
-which brew 
+which brew
 RETSTATUS=$?
 if [ $RETSTATUS -ne 0 ]
 then
@@ -14,7 +14,7 @@ else
   echo Homebrew already installed.
   echo Upgrading brew casks.....
   #http://apple.stackexchange.com/questions/190072/is-there-any-way-to-upgrade-brew-caski
-  # one-liner equivalent = curl -s https://gist.githubusercontent.com/atais/9c72e469b1cbec35c7c430ce03de2a6b/raw/36808a0544628398f26b48f7a3c7b309872ca2c6/cask_upgrade.sh | bash /dev/stdin 
+  # one-liner equivalent = curl -s https://gist.githubusercontent.com/atais/9c72e469b1cbec35c7c430ce03de2a6b/raw/36808a0544628398f26b48f7a3c7b309872ca2c6/cask_upgrade.sh | bash /dev/stdin
   (set -x; brew update;)
 
   (set -x; brew cleanup;)
@@ -29,7 +29,7 @@ else
   for cask in ${casks[@]}
   do
     version=$(brew cask info $cask | sed -n "s/$cask:\ \(.*\)/\1/p")
-    installed=$(find "/usr/local/Caskroom/$cask" -type d -maxdepth 1 -maxdepth 1 -name "$version") 
+    installed=$(find "/usr/local/Caskroom/$cask" -type d -maxdepth 1 -maxdepth 1 -name "$version")
     if [[ -z $installed ]]; then
       echo "${red}${cask}${reset} requires ${red}update${reset}."
       (set -x; brew cask uninstall $cask --force;)
@@ -40,7 +40,7 @@ else
   done
 fi
 
-#Homebrew will show warning message if already installed.  
+#Homebrew will show warning message if already installed.
 # Install Git
 brew install git
 
@@ -58,15 +58,18 @@ brew install wget
 brew install python
 
 # Install n to get Node
-brew install n 
+brew install n
 
 # Install Node Stable Version
-sudo n stable
+n stable
+
+# Install Firacode Font
+npm i firacode
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
 echo Tapping caskroom/cask...
 brew tap caskroom/cask
-brew install brew-cask 
+brew install brew-cask
 
 # Install Visual Studio Code
 brew cask install visual-studio-code
@@ -83,8 +86,9 @@ brew cask install postman
 # Install SourceTree
 brew cask install sourcetree
 
-# Install Chrome
-brew cask install google-chrome
+# Install Chrome Beta
+brew tap homebrew/cask-versions
+brew cask install google-chrome-beta
 
 # Install IINA (VLC is outdated)
 brew cask install iina
