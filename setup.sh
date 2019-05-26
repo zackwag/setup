@@ -77,11 +77,11 @@ brew cask install visual-studio-code
 # Install atom
 brew cask install atom
 
-# Install iTerm2
-brew cask install iterm2
+# Install Hyper Terminal
+brew cask install hyper
 
-# Install Postman
-brew cask install postman
+# Install Insomnia
+brew cask install insomnia
 
 # Install SourceTree
 brew cask install sourcetree
