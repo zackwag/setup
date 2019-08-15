@@ -72,9 +72,6 @@ brew install n
 sudo n stable
 sudo chown -R $USER /usr/local/lib/node_modules
 
-# Install Spaceship Prompt
-npm install -g spaceship-prompt  
-
 # Install Firacode Font
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
