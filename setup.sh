@@ -61,10 +61,11 @@ brew install python
 brew install n
 
 # Install Node Stable Version
-n stable
+sudo n stable
 
 # Install Firacode Font
-npm i firacode
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
 echo Tapping caskroom/cask...
