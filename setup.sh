@@ -40,13 +40,21 @@ else
   done
 fi
 
-#Homebrew will show warning message if already installed.
+# Homebrew will show warning message if already installed.
+
 # Install Git
 brew install git
 
 # Install SDKMAN
 curl -s get.sdkman.io | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Install ZSH
+brew install zsh
+chsh -s /bin/zsh
+
+# Install Syntax Highlighting
+brew install zsh-syntax-highlighting 
 
 # Install JDK
 sdk install java
@@ -62,13 +70,16 @@ brew install n
 
 # Install Node Stable Version
 sudo n stable
+sudo chown -R $USER /usr/local/lib/node_modules
+
+# Install Spaceship Prompt
+npm install -g spaceship-prompt  
 
 # Install Firacode Font
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
-echo Tapping caskroom/cask...
 brew tap caskroom/cask
 brew install brew-cask
 
