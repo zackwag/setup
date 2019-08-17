@@ -109,3 +109,6 @@ brew cask install cakebrew
 
 # Download Hyper Settings
 wget https://raw.githubusercontent.com/zackwag/setup/master/hyper.js
+
+# Create Empty SSH Known Hosts File
+sudo touch ~/.ssh/known_hosts
