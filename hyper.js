@@ -103,7 +103,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'zsh',
+    shell: '/bin/bash',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -152,7 +152,6 @@ module.exports = {
     "hyperterm-paste",
     "hyperterm-tab-icons",
     "hyper-search",
-    "hyperminimal",
     "hyper-material-theme"
   ],
 
