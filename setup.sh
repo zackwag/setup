@@ -49,13 +49,6 @@ brew install git
 curl -s get.sdkman.io | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Install ZSH
-brew install zsh
-chsh -s /bin/zsh
-
-# Install Syntax Highlighting
-brew install zsh-syntax-highlighting 
-
 # Install JDK
 sdk install java
 
@@ -92,8 +85,8 @@ brew cask install hyper
 # Install Insomnia
 brew cask install insomnia
 
-# Install SourceTree
-brew cask install sourcetree
+# Install GitHub Desktop
+brew cask install github
 
 # Install Chrome Beta
 brew tap homebrew/cask-versions
@@ -113,3 +106,6 @@ brew cask install vanilla
 
 # Install Cakebrew
 brew cask install cakebrew
+
+# Download Hyper Settings
+wget https://raw.githubusercontent.com/zackwag/setup/master/hyper.js
