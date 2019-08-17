@@ -112,3 +112,7 @@ wget https://raw.githubusercontent.com/zackwag/setup/master/hyper.js
 
 # Create Empty SSH Known Hosts File
 sudo touch ~/.ssh/known_hosts
+
+# Setup Environment
+git clone https://github.com/zackwag/profile.git .profile.d
+ln -s .profile.d/init .profile
