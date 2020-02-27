@@ -70,7 +70,7 @@ brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 # Install Homebrew-cask. A CLI workflow for the adminisration of Mac applications distributed as binaries http://caskroom.io
-brew tap caskroom/cask
+brew tap homebrew/cask-cask
 brew install brew-cask
 
 # Install Visual Studio Code
