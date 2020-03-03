@@ -34,9 +34,6 @@ brew cask install visual-studio-code
 # Install atom
 brew cask install atom
 
-# Install Hyper Terminal
-brew cask install hyper
-
 # Install Insomnia
 brew cask install insomnia
 
@@ -61,6 +58,9 @@ brew cask install vanilla
 
 # Install Cakebrew
 brew cask install cakebrew
+
+# Install Hyper Terminal
+brew cask install hyper
 
 # Download Hyper Settings
 wget https://gist.githubusercontent.com/zackwag/8a589bee3655355afd446d564f5a2639/raw/06a3fa995d2fce1eba8357a156faaee243a5b03a/.hyper.js
