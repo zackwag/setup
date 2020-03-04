@@ -11,6 +11,9 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 # Install JDK
 sdk install java
 
+# Install Maven
+brew install maven
+
 # Install wget
 brew install wget
 
