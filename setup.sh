@@ -65,6 +65,9 @@ brew cask install hyper
 # Download Hyper Settings
 wget https://gist.githubusercontent.com/zackwag/8a589bee3655355afd446d564f5a2639/raw/06a3fa995d2fce1eba8357a156faaee243a5b03a/.hyper.js
 
+# Download Visual Studio Code Settings
+# ~/Library/Application\ Support/Code/User/
+wget https://gist.github.com/zackwag/5b8129ac0aff4d8a98c7e2e794038ae7
 # Create Empty SSH Known Hosts File
 sudo mkdir ~/.ssh/
 sudo touch ~/.ssh/known_hosts
