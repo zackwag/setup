@@ -1,0 +1,70 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.matchBrackets": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "org",
+        "com",
+    ],
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "trailing-spaces.trimOnSave": true,
+    "files.insertFinalNewline": true,
+    "java.semanticHighlighting.enabled": true,
+    "window.zoomLevel": 0,
+    "java.refactor.renameFromFileExplorer": "autoApply",
+    "workbench.colorTheme": "Nord Deep",
+    "python.languageServer": "Pylance",
+    "sonarlint.rules": {
+        "java:S2387": {
+            "level": "off"
+        },
+        "java:S2696": {
+            "level": "off"
+        },
+        "java:S1214": {
+            "level": "off"
+        },
+        "java:S110": {
+            "level": "off"
+        },
+        "java:S107": {
+            "level": "off"
+        },
+        "java:S2160": {
+            "level": "off"
+        },
+        "java:S3305": {
+            "level": "off"
+        },
+        "java:S1118": {
+            "level": "off"
+        },
+        "java:S5976": {
+            "level": "off"
+        },
+        "java:S1612": {
+            "level": "off"
+        },
+        "java:S1109": {
+            "level": "on"
+        }
+    },
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.detectIndentation": false
+}
