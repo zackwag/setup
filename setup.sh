@@ -69,6 +69,9 @@ wget -P ~/Library/Application\ Support/Code/User/ -O settings.json https://raw.g
 sudo mkdir ~/.ssh/
 sudo touch ~/.ssh/known_hosts
 
+# Download Color Calibration for External Monitor
+wget -P ~/Library/ColorSync/Profiles https://github.com/zackwag/setup/raw/master/space-rtings-icc-profile.icm
+
 # Setup Environment
 git clone https://github.com/zackwag/profile.git .profile.d
 ln -s .profile.d/init .profile
