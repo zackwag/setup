@@ -4,12 +4,9 @@
 # Install Git
 brew install git
 
-# Install SDKMAN
-curl -s get.sdkman.io | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # Install JDK
-sdk install java
+brew cask install adoptopenjdk
+brew cask install adoptopenjdk11
 
 # Install Maven
 brew install maven
@@ -53,9 +50,6 @@ brew cask install iina
 # Install The Unarchiver
 brew cask install the-unarchiver
 
-# Install Transmission
-brew cask install transmission
-
 # Install Vanilla
 brew cask install vanilla
 
@@ -66,10 +60,10 @@ brew cask install cakebrew
 brew cask install hyper
 
 # Download Hyper Settings
-wget https://gist.githubusercontent.com/zackwag/8a589bee3655355afd446d564f5a2639/raw/06a3fa995d2fce1eba8357a156faaee243a5b03a/.hyper.js
+wget -O .hyper.js https://raw.githubusercontent.com/zackwag/setup/master/hyper-settings.js
 
 # Download Visual Studio Code Settings
-wget -P ~/Library/Application\ Support/Code/User/ https://gist.githubusercontent.com/zackwag/5b8129ac0aff4d8a98c7e2e794038ae7/raw/f7d97666b68ad10dc8f2776945c58322308e86da/settings.json
+wget -P ~/Library/Application\ Support/Code/User/ -O settings.json https://raw.githubusercontent.com/zackwag/setup/master/vs-code-settings.json
 
 # Create Empty SSH Known Hosts File
 sudo mkdir ~/.ssh/
