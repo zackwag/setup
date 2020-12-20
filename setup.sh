@@ -5,8 +5,9 @@
 brew install git
 
 # Install JDK
-brew cask install adoptopenjdk
-brew cask install adoptopenjdk11
+brew install --cask adoptopenjdk 
+brew tap adoptopenjdk/openjdk
+brew install --cask adoptopenjdk11
 
 # Install Maven
 brew install maven
@@ -26,38 +27,38 @@ sudo chown -R $USER /usr/local/lib/node_modules
 
 # Install Firacode Font
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 # Install Visual Studio Code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 # Install atom
-brew cask install atom
+brew install --cask atom
 
 # Install Insomnia
-brew cask install insomnia
+brew install --cask insomnia
 
 # Install GitHub Desktop
-brew cask install github
+brew install --cask github
 
 # Install Chrome Beta
 brew tap homebrew/cask-versions
-brew cask install google-chrome-beta
+brew install --cask google-chrome-beta
 
 # Install IINA (VLC is outdated)
-brew cask install iina
+brew install --cask iina
 
 # Install The Unarchiver
-brew cask install the-unarchiver
+brew install --cask the-unarchiver
 
 # Install Vanilla
-brew cask install vanilla
+brew install --cask vanilla
 
 # Install Cakebrew
-brew cask install cakebrew
+brew install --cask cakebrew
 
 # Install Hyper Terminal
-brew cask install hyper
+brew install --cask hyper
 
 # Download Hyper Settings
 wget -O .hyper.js https://raw.githubusercontent.com/zackwag/setup/master/hyper-settings.js
